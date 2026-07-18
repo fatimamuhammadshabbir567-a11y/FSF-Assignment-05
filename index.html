@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-04</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    
+    <div class="background-overlay"></div>
+
+    <main class="container">
+        <div class="card">
+            <div class="header">
+
+                <div class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <h1>Grade Calculator</h1>
+
+                <p>Enter your percentage below to calculate your grade.</p>
+
+            </div>
+
+            <div class="input-section">
+                <label for="percentage">Percentage</label>
+
+                <div class="input-box">
+                     <i class="fa-solid fa-percent"></i>
+
+                      <input
+                     id="percentage" 
+                     type="number" 
+                     placeholder="Enter your percentage"
+                     min="0"
+                     max="100">
+
+                </div>
+            </div>
+
+            <button type="button" onclick="gradecalculator()">
+                 <i class="fa-solid fa-calculator"></i> Check Grade</button>
+
+                 <div class="result-box">
+
+                    <h2>Result</h2>
+
+                    <p id="result">Your grade will appear here</p>
+
+                 </div>
+
+
+
+        </div>
+    </main>
+
+    
+    <script src="./index.js"></script>
+
+</body>
+</html>
